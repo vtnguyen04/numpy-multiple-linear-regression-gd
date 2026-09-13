@@ -367,6 +367,7 @@ def predict_lr_model(model, X):
     return predict_linear(X_proc, model['weights'])
 
 # Step 27 - score_lr_model
+import numpy as np
 def score_lr_model(model, X, y):
     # TODO: Predict on raw features and return MAE, RMSE, and R^2 metrics.
     
