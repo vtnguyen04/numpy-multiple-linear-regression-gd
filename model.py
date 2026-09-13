@@ -139,7 +139,7 @@ def gd_step(X, y, weights, lr):
         Updated weight vector of shape (d_in,).
     """
     # TODO: return the updated weight vector after one MSE gradient step
-    y_pred = X @ weights
+    y_pred = predict_linear(X, weights)
     grad = mse_gradient(X, y, y_pred)
 
     weights -= lr * grad
