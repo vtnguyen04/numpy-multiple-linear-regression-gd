@@ -75,9 +75,6 @@ def add_bias_column(X):
 # Step 6 - prepare_design_matrix
 def prepare_design_matrix(X, mean, std):
     # TODO: Standardize features then add the bias column to form the design matrix.
-    X = np.asarray(X, dtype=float)
-    mean = np.asarray(mean, dtype=float)
-    std = np.asarray(std, dtype=float)
 
     X_standardized = (X - mean) / std
 
